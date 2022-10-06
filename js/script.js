@@ -20,14 +20,24 @@ console.log(kiloMeters, userAge, typeof(kiloMeters), typeof(userAge))
 let ticketPrice = kiloMeters * pricePerKm;
 console.log(ticketPrice)
 
-let ticketChildDiscount  = ticketPrice * 0.2;
-console.log(ticketChildDiscount)
+let childDiscount  = ticketPrice * 0.2;
+console.log(childDiscount)
 
-let ticketOldDiscount  = ticketPrice * 0.4;
-console.log(ticketOldDiscount)
+let oldDiscount  = ticketPrice * 0.4;
+console.log(oldDiscount)
 
+const ticketChildPrice = ticketPrice - childDiscount;
+const ticketOldPrice = ticketPrice - oldDiscount;
+console.log(ticketChildPrice, ticketOldPrice);
 // data elaboration
-
-
-
+if(userAge <= 18){
+    ticketPrice = ticketChildPrice
+}
+else if(userAge >= 65){
+    ticketPrice = ticketOldPrice
+}
+else{
+   ticketPrice
+}
+console.log(ticketPrice)
 // outpu
