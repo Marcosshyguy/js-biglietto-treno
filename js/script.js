@@ -8,15 +8,26 @@
 
 
 // user input
+const pricePerKm = 0.21;
+
 // kilometers to cover
 let kiloMeters = parseInt(prompt("How many kms are you going to cover?"));
 
 // user age
 let userAge = parseInt(prompt("What's your age?"));
-
 console.log(kiloMeters, userAge, typeof(kiloMeters), typeof(userAge))
 
+let ticketPrice = kiloMeters * pricePerKm;
+console.log(ticketPrice)
+
+let ticketChildDiscount  = ticketPrice * 0.2;
+console.log(ticketChildDiscount)
+
+let ticketOldDiscount  = ticketPrice * 0.4;
+console.log(ticketOldDiscount)
+
 // data elaboration
+
 
 
 // outpu
