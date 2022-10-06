@@ -31,13 +31,15 @@ const ticketOldPrice = ticketPrice - oldDiscount;
 console.log(ticketChildPrice, ticketOldPrice);
 // data elaboration
 if(userAge <= 18){
-    ticketPrice = ticketChildPrice
+    ticketPrice = ticketChildPrice.toFixed(2);
 }
 else if(userAge >= 65){
-    ticketPrice = ticketOldPrice
+    ticketPrice = ticketOldPrice.toFixed(2);
 }
 else{
-   ticketPrice
+   ticketPrice = ticketPrice.toFixed(2);
 }
-console.log(ticketPrice)
-// outpu
+console.log(ticketPrice, typeof(ticketPrice))
+// output
+
+document.getElementById("ticket-price").innerHTML += ticketPrice+ "$";
