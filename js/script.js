@@ -4,3 +4,19 @@
 // va applicato uno sconto del 20% per i minorenni
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
+
+
+
+// user input
+// kilometers to cover
+let kiloMeters = parseInt(prompt("How many kms are you going to cover?"));
+
+// user age
+let userAge = parseInt(prompt("What's your age?"));
+
+console.log(kiloMeters, userAge, typeof(kiloMeters), typeof(userAge))
+
+// data elaboration
+
+
+// outpu
